@@ -1,0 +1,71 @@
+.player
+{
+	position: absolute;
+	top: 0;
+	width: 500px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	
+	clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+}
+.player.p1
+{
+	left: 310px;
+}
+.player.p2
+{
+	right: 310px;
+}
+
+.score
+{
+	position: absolute;
+	top: 0;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	
+	clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 30% 100%);
+}
+.score.p1
+{
+	left: 750px;
+}
+.score.p2
+{
+	right: 750px;
+}
+
+.round
+{
+	font-size: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -130px;
+	top: 0;
+	width: 260px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	
+	clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
+}
+
+.game
+{
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	bottom: 0;
+	width: 400px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	
+	clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
+}
+
+.top.hidden {top: -50px !important; }
+.bot.hidden {bottom: -40px !important; } 
