@@ -17,7 +17,7 @@ The versus page displays player names, scores, and the round of the tournament.
 
 #### Fields
 
-The versus page has 5 fields. Set them up like so:
+The versus page has a number of fields. Set them up like so:
 
 ![Versus page field setup](https://raw.githubusercontent.com/DrEvilBrain/PGNScoreboardAssistant/master/VersusPageFields.png "Versus page field setup")
 
