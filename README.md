@@ -43,6 +43,18 @@ Game name (used to set the game name for match info):
 Event name (used to set the event name for match info):
     Key: event
     Type: Text field
+
+Show Matcherino (used to show the bottom bar with the Matcherino code + prize pool):
+    Key: showMatcherino
+    Type: Select menus
+
+Matcherino Page ID (the numeric identifier in the URL of a Matcherino event page):
+    Key: matcherino
+    Type: Text field
+
+Matcherino Coupon (the sponsor code used to contribute to the the Matcherino prize pool):
+    Key: coupon
+    Type: Text field
 ```
 ## Color Palette
 

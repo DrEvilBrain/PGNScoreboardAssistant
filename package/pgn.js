@@ -22,17 +22,22 @@ function elemUpdate()
 	{
 		for(var prop in docData)
 		{
-			$('#'+prop).text(docData[prop]);
+			if(prop != 'matcherino_1')
+			{
+				$('#'+prop).text(docData[prop]);
+			}
 		}
 		next();
 	}
 }
 
-function updateGame()
+function updateMatcherino()
 {
-	return function (next)
+	var url = 'https://matcherino.com/__api/bounties?id='+docData['matcherino_1'];
+	
+	$.getJSON(url, function(data)
 	{
-		$('#game_1').text(docData['game_1']);
-		next();
-	}
-} 
+		var prize = '$' + (data.balance/100);
+		$('#matcherino_1').text("Matcherino: " + docData['coupon_1'] + " - " + prize); 
+	});
+}
