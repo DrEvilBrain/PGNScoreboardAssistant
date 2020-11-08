@@ -37,7 +37,7 @@ function updateMatcherino()
 	
 	$.getJSON(url, function(data)
 	{
-		var prize = '$' + (data.balance/100);
+		var prize = '$' + (data.balance / 100).toFixed(2);
 		$('#matcherino_1').text("Matcherino: " + docData['coupon_1'] + " - " + prize); 
 	});
 }
